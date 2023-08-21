@@ -1,12 +1,18 @@
-class Toyota implements BodyDesign{
+class Toyota implements CarComponent{
+
+    double cost;
+
+    Toyota(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
-        return "Company : Toyota";
+        return "Company : BMW";
     }
 
     @Override
     public double cost() {
-        return 20;
+        return cost;
     }
 }

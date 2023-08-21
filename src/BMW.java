@@ -1,4 +1,10 @@
-class BMW implements BodyDesign{
+class BMW implements CarComponent{
+
+    double cost;
+
+    BMW(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -7,6 +13,6 @@ class BMW implements BodyDesign{
 
     @Override
     public double cost() {
-        return 50;
+        return cost;
     }
 }

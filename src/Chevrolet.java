@@ -1,12 +1,18 @@
-class Chevrolet implements BodyDesign{
+class Chevrolet implements CarComponent{
+
+    double cost;
+
+    Chevrolet(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
-        return "Company : Chevrolet";
+        return "Company : BMW";
     }
 
     @Override
     public double cost() {
-        return 40;
+        return cost;
     }
 }

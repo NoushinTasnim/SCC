@@ -1,12 +1,18 @@
-class Ferrari implements BodyDesign{
+class Ferrari implements CarComponent{
+
+    double cost;
+
+    Ferrari(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
-        return "Company : Ferrari";
+        return "Company : BMW";
     }
 
     @Override
     public double cost() {
-        return 30;
+        return cost;
     }
 }
