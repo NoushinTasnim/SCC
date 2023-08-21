@@ -1,4 +1,4 @@
-class Toyota implements CarComponent{
+class Toyota extends BodyDesign{
 
     double cost;
 

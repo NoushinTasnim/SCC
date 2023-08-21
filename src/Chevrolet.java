@@ -1,4 +1,4 @@
-class Chevrolet implements CarComponent{
+class Chevrolet extends BodyDesign{
 
     double cost;
 

@@ -1,4 +1,4 @@
-class Fords implements CarComponent{
+class Fords extends BodyDesign{
 
     double cost;
 

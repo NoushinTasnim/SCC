@@ -1,4 +1,3 @@
-public interface BodyDesign {
-    public String getName();
-    public double cost();
+abstract class BodyDesign implements CarComponent{
+    
 }

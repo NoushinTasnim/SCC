@@ -1,4 +1,4 @@
-class Ferrari implements CarComponent{
+class Ferrari extends BodyDesign{
 
     double cost;
 
