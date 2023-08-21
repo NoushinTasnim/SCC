@@ -1,4 +1,8 @@
-class Snow implements CarComponent{
+abstract class Tire implements CarComponent{
+    
+}
+
+class Snow extends Tire{
 
     double cost;
 
@@ -16,7 +20,7 @@ class Snow implements CarComponent{
     }
 }
 
-class Spare implements CarComponent{
+class Spare extends Tire{
 
     double cost;
 
@@ -34,7 +38,7 @@ class Spare implements CarComponent{
     }
 }
 
-class Whitewall implements CarComponent{
+class Whitewall extends Tire{
 
     double cost;
 
@@ -52,7 +56,7 @@ class Whitewall implements CarComponent{
     }
 }
 
-class Slick implements CarComponent{
+class Slick extends Tire{
 
     double cost;
 
