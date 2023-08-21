@@ -1,4 +1,8 @@
-class Tabular implements CarComponent{
+abstract class Chesis implements CarComponent{
+
+}
+
+class Tabular extends Chesis{
     double cost;
 
     Tabular(double cost){
@@ -16,7 +20,7 @@ class Tabular implements CarComponent{
     }
 }
 
-class Backbone implements CarComponent{
+class Backbone extends Chesis{
     double cost;
 
     Backbone(double cost){
@@ -34,7 +38,7 @@ class Backbone implements CarComponent{
     }
 }
 
-class LadderFrame implements CarComponent{
+class LadderFrame extends Chesis{
     double cost;
 
     LadderFrame(double cost){

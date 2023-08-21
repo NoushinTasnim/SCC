@@ -1,4 +1,4 @@
-class LowPoweredAC implements CarComponent{
+class LowPoweredAC extends AC{
     private double cost;
 
     public LowPoweredAC(double cost) {

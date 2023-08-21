@@ -1,4 +1,4 @@
-class HighPoweredAC implements CarComponent{
+class HighPoweredAC extends AC{
     
     private double cost;
 
