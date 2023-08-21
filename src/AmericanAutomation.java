@@ -1,4 +1,4 @@
-class AmericaAutomation implements CarComponent{
+class AmericaAutomation implements Automation{
 
     double cost;
     

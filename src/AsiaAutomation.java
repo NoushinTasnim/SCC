@@ -1,4 +1,4 @@
-class AsiaAutomation implements CarComponent{
+class AsiaAutomation implements Automation{
 
     double cost;
 
