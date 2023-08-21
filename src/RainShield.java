@@ -1,50 +1,53 @@
-class ThickRainShield extends CarDecorator{
-    Car car;
-    public ThickRainShield(Car car){
-        this.car = car;
+class ThickRainShield implements CarDecorator {
+    private double cost;
+
+    public ThickRainShield(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 2 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : ThickRainShield ,";
+    public String getName() {
+        return "Customization: Thick rain shield";
     }
 }
 
-class ThinRainShield extends CarDecorator{
-    Car car;
-    public ThinRainShield(Car car){
-        this.car = car;
+class ThinRainShield implements CarDecorator {
+    private double cost;
+
+    public ThinRainShield(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 5 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : ThinRainShield ,";
+    public String getName() {
+        return "Customization: Thin rain shield";
     }
 }
 
-class CurvedRainShield extends CarDecorator{
-    Car car;
-    public CurvedRainShield(Car car){
-        this.car = car;
+class CurvedRainShield implements CarDecorator {
+    private double cost;
+
+    public CurvedRainShield(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 10 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : CurvedRainShield ,";
+    public String getName() {
+        return "Customization: Curved rain shield";
     }
 }

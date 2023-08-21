@@ -1,17 +1,17 @@
-public class OpenRoofSystem  extends CarDecorator{
-    Car car;
-    public OpenRoofSystem(Car car){
-        this.car = car;
-    }
+public class OpenRoofSystem implements CarDecorator {
+    private double cost;
 
+    public OpenRoofSystem(double cost) {
+        this.cost = cost;
+    }
 
     @Override
     public double cost() {
-        return 20 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : OpenRoofSystem ,";
+    public String getName() {
+        return "Customization: Open roof system";
     }
 }

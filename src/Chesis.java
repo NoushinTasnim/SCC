@@ -1,13 +1,13 @@
-public interface Chesis {
-    public double cost();
-    public String getName();
-}
+class Tabular implements CarComponent{
+    double cost;
 
-class Tabular implements Chesis{
+    Tabular(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public double cost() {
-        return 5;
+        return cost;
     }
 
     @Override
@@ -16,11 +16,16 @@ class Tabular implements Chesis{
     }
 }
 
-class Backbone implements Chesis{
+class Backbone implements CarComponent{
+    double cost;
+
+    Backbone(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public double cost() {
-        return 10;
+        return cost;
     }
 
     @Override
@@ -29,11 +34,16 @@ class Backbone implements Chesis{
     }
 }
 
-class LadderFrame implements Chesis{
+class LadderFrame implements CarComponent{
+    double cost;
+
+    LadderFrame(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public double cost() {
-        return 15;
+        return cost;
     }
 
     @Override

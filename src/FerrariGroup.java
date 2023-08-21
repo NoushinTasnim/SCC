@@ -7,6 +7,7 @@ public class FerrariGroup extends CarGroup {
         car.addComponent(new Slick(1000));
         car.addComponent(new LowPoweredAC(500));
         car.addComponent(new LadderFrame(1000));
+        car.addComponent(new RedCar(1000));
 
         return car;
     }

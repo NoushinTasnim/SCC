@@ -1,10 +1,10 @@
-public interface Tire {
-    public String getName();
-    public double cost();
-}
+class Snow implements CarComponent{
 
-class Snow implements Tire{
+    double cost;
 
+    Snow(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Tire : Snow ,";
@@ -12,12 +12,17 @@ class Snow implements Tire{
 
     @Override
     public double cost() {
-        return 1;
+        return cost;
     }
 }
 
-class Spare implements Tire{
+class Spare implements CarComponent{
 
+    double cost;
+
+    Spare(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Tire : Spare ,";
@@ -25,12 +30,17 @@ class Spare implements Tire{
 
     @Override
     public double cost() {
-        return 2;
+        return cost;
     }
 }
 
-class Whitewall implements Tire{
+class Whitewall implements CarComponent{
 
+    double cost;
+
+    Whitewall(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Tire : Whitewall ,";
@@ -38,11 +48,18 @@ class Whitewall implements Tire{
 
     @Override
     public double cost() {
-        return 3;
+        return cost;
     }
 }
 
-class Slick implements Tire{
+class Slick implements CarComponent{
+
+    double cost;
+
+    Slick(double cost){
+        this.cost = cost;
+    }
+
     @Override
     public String getName() {
         return "Tire : Slick";
@@ -50,6 +67,6 @@ class Slick implements Tire{
 
     @Override
     public double cost() {
-        return 4;
+        return cost;
     }
 }

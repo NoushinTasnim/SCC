@@ -1,9 +1,10 @@
-public interface Engine {
-    public String getName();
-    public double cost();
-}
+class CC1300 implements CarComponent{
 
-class CC1300 implements Engine{
+    double cost;
+
+    CC1300(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -12,12 +13,17 @@ class CC1300 implements Engine{
 
     @Override
     public double cost() {
-        return 10;
+        return cost;
     }
 }
 
-class CC1700 implements Engine{
+class CC1700 implements CarComponent{
 
+    double cost;
+
+    CC1700(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Engine : 1700CC ,";
@@ -25,12 +31,17 @@ class CC1700 implements Engine{
 
     @Override
     public double cost() {
-        return 20;
+        return cost;
     }
 }
 
-class CC1800 implements Engine{
+class CC1800 implements CarComponent{
 
+    double cost;
+
+    CC1800(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Engine : 1800CC ,";
@@ -38,12 +49,17 @@ class CC1800 implements Engine{
 
     @Override
     public double cost() {
-        return 30;
+        return cost;
     }
 }
 
-class CC2100 implements Engine{
+class CC2100 implements CarComponent{
 
+    double cost;
+
+    CC2100(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
         return "Engine : 2100CC ,";
@@ -51,6 +67,6 @@ class CC2100 implements Engine{
 
     @Override
     public double cost() {
-        return 40;
+        return cost;
     }
 }

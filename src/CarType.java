@@ -18,3 +18,13 @@ enum CarColor{
     BLACK,
     WHITE
 }
+
+enum Location{
+    ASIA,
+    USA
+}
+
+enum NotificationType {
+    PRICE_CHANGE,
+    BASIC_FEATURES_CHANGE
+}

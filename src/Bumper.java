@@ -1,43 +1,35 @@
-class TightBumper extends CarDecorator{
-    Car car;
-    public TightBumper(Car car){
-        this.car = car;
-    }
+class TightBumper implements CarDecorator {
+    private double cost;
 
-    @Override
-    public void prepareCar(CarColor carColor) {
-        this.car.prepareCar(carColor);
+    public TightBumper(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 10 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : TightBumper ,";
+    public String getName() {
+        return "Customization: Tight Bumper";
     }
 }
 
-class LooseBumper extends CarDecorator{
-    Car car;
-    public LooseBumper(Car car){
-        this.car = car;
-    }
+class LooseBumper implements CarDecorator {
+    private double cost;
 
-    @Override
-    public void prepareCar(CarColor carColor) {
-        this.car.prepareCar(carColor);
+    public LooseBumper(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 5 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : LooseBumper ,";
+    public String getName() {
+        return "Customization: Loose Bumper";
     }
 }

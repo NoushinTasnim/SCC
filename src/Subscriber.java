@@ -1,33 +1,16 @@
-package NotificationSystemClasses;
-
 public interface Subscriber {
-    public void update(String message);
-    public void requestForSubscription();
-    public void requestForSubscriptionRemoval();
+    void update(NotificationType notificationType);
 }
 
-class SubscriberClient implements Subscriber{
-    String name;
-    NotificationSystem notificationSystem;
+class Client implements Subscriber {
+    private String name;
 
-    public SubscriberClient(String name){
+    public Client(String name) {
         this.name = name;
-        this.notificationSystem = NotificationSystem.getInstance();
     }
 
     @Override
-    public void update(String message) {
-        System.out.println("Hello " + this.name + " ,we have an update for you");
-        System.out.println(message);
-    }
-
-    @Override
-    public void requestForSubscription() {
-        notificationSystem.registerSubscriber(this);
-    }
-
-    @Override
-    public void requestForSubscriptionRemoval() {
-        notificationSystem.removeSubscriber(this);
+    public void update(NotificationType notificationType) {
+        System.out.println("Notification received by " + name + ": " + notificationType);
     }
 }

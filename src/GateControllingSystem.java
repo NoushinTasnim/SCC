@@ -1,34 +1,35 @@
-class MobileBasedControlSystem extends CarDecorator {
-    Car car;
-    public MobileBasedControlSystem(Car car){
-        this.car = car;
-    }
+class MobileBasedControlSystem implements CarDecorator {
+    private double cost;
 
+    public MobileBasedControlSystem(double cost) {
+        this.cost = cost;
+    }
 
     @Override
     public double cost() {
-        return 20 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : MobileBasedGateControllingSystem ,";
+    public String getName() {
+        return "Customization: Mobile based control system";
     }
 }
 
-class RemoteBasedControlSystem extends CarDecorator {
-    Car car;
-    public RemoteBasedControlSystem(Car car){
-        this.car = car;
+class RemoteBasedControlSystem implements CarDecorator {
+    private double cost;
+
+    public RemoteBasedControlSystem(double cost) {
+        this.cost = cost;
     }
 
     @Override
     public double cost() {
-        return 10 + this.car.cost();
+        return cost;
     }
 
     @Override
-    public String getDescription() {
-        return this.car.getDescription() + "Added Decorator : RemoteBasedGateControllingSystem ,";
+    public String getName() {
+        return "Customization: Remote based control system";
     }
 }

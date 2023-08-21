@@ -1,30 +1,18 @@
-public interface Automation {
-    public String getName();
-    public double cost();
-}
+class AsiaAutomation implements CarComponent{
 
-class AsiaAutomation implements Automation{
+    double cost;
+
+    AsiaAutomation(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
-        return "Automation : Asia ,";
+        return "Driving using Asia-based AI strategy";
     }
 
     @Override
     public double cost() {
-        return 10;
-    }
-}
-
-class AmericaAutomation implements Automation{
-
-    @Override
-    public String getName() {
-        return "Automation : America ,";
-    }
-
-    @Override
-    public double cost() {
-        return 5;
+        return cost;
     }
 }

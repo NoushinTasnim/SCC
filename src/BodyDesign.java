@@ -1,9 +1,9 @@
-public interface BodyDesign {
-    public String getName();
-    public double cost();
-}
+class Fords implements CarComponent{
+    double cost;
 
-class Fords implements BodyDesign{
+    Fords(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -12,11 +12,16 @@ class Fords implements BodyDesign{
 
     @Override
     public double cost() {
-        return 10;
+        return cost;
     }
 }
 
-class Ferrari implements BodyDesign{
+class Ferrari implements CarComponent{
+    double cost;
+
+    Ferrari(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -25,10 +30,15 @@ class Ferrari implements BodyDesign{
 
     @Override
     public double cost() {
-        return 30;
+        return cost;
     }
 }
-class Toyota implements BodyDesign{
+class Toyota implements CarComponent{
+    double cost;
+
+    Toyota(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -37,10 +47,15 @@ class Toyota implements BodyDesign{
 
     @Override
     public double cost() {
-        return 20;
+        return cost;
     }
 }
-class BMW implements BodyDesign{
+class BMW implements CarComponent{
+    double cost;
+
+    BMW(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -49,11 +64,16 @@ class BMW implements BodyDesign{
 
     @Override
     public double cost() {
-        return 50;
+        return cost;
     }
 }
 
-class Chevrolet implements BodyDesign{
+class Chevrolet implements CarComponent{
+    double cost;
+
+    Chevrolet(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
@@ -62,6 +82,6 @@ class Chevrolet implements BodyDesign{
 
     @Override
     public double cost() {
-        return 40;
+        return cost;
     }
 }

@@ -1,56 +1,70 @@
-public interface Seat {
-    public String getName();
-    public int totalSeats();
-}
+class RacingCarSeat implements CarComponent{
+    double cost;
 
-class RacingCarSeat implements Seat{
+    RacingCarSeat(double cost){
+        this.cost = cost;
+    }
 
     @Override
     public String getName() {
-        return "Total Seats : " + this.totalSeats() + " ," ;
+        return "Total Seats : 1" ;
     }
 
     @Override
-    public int totalSeats() {
-        return 1;
-    }
-}
-
-class PrivateCarSeat implements Seat{
-
-    @Override
-    public String getName() {
-        return "Total Seats : " + this.totalSeats() + " ,";
-    }
-
-    @Override
-    public int totalSeats() {
-        return 5;
+    public double cost() {
+        return cost;
     }
 }
 
-class SUVCarSeat implements Seat{
+class PrivateCarSeat implements CarComponent{
+    double cost;
 
-    @Override
-    public String getName() {
-        return "Total Seats : " + this.totalSeats() + " ,";
+    PrivateCarSeat(double cost){
+        this.cost = cost;
     }
 
     @Override
-    public int totalSeats() {
-        return 15;
+    public String getName() {
+        return "Total Seats : 5";
+    }
+
+    @Override
+    public double cost() {
+        return cost;
     }
 }
 
-class MilitaryCarSeat implements Seat{
+class SUVCarSeat implements CarComponent{
+    double cost;
 
+    SUVCarSeat(double cost){
+        this.cost = cost;
+    }
     @Override
     public String getName() {
-        return "Total Seats : " + this.totalSeats() + " ,";
+        return "Total Seats : 15";
     }
 
     @Override
-    public int totalSeats() {
-        return 7;
+    public double cost() {
+        return cost;
+    }
+}
+
+class MilitaryCarSeat implements CarComponent{
+    double cost;
+
+    MilitaryCarSeat(double cost){
+        this.cost = cost;
+    }
+
+    @Override
+    public String getName() {
+        return "Total Seats : 7";
+    }
+
+    @Override
+    public double cost() {
+        return cost;
     }
 }
