@@ -1,4 +1,4 @@
-class Fords extends BodyDesign{
+class Fords implements BodyDesign{
 
     double cost;
 

@@ -1,4 +1,4 @@
-class HighPoweredAC extends AC{
+class HighPoweredAC implements AC{
     
     private double cost;
 

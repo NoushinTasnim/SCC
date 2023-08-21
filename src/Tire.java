@@ -1,8 +1,8 @@
-abstract class Tire implements CarComponent{
+public interface Tire extends CarComponent{
     
 }
 
-class Snow extends Tire{
+class Snow implements Tire{
 
     double cost;
 
@@ -20,7 +20,7 @@ class Snow extends Tire{
     }
 }
 
-class Spare extends Tire{
+class Spare implements Tire{
 
     double cost;
 
@@ -38,7 +38,7 @@ class Spare extends Tire{
     }
 }
 
-class Whitewall extends Tire{
+class Whitewall implements Tire{
 
     double cost;
 
@@ -56,7 +56,7 @@ class Whitewall extends Tire{
     }
 }
 
-class Slick extends Tire{
+class Slick implements Tire{
 
     double cost;
 

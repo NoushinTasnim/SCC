@@ -1,4 +1,4 @@
-class BMW implements CarComponent{
+class BMW implements BodyDesign{
 
     double cost;
 

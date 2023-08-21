@@ -1,4 +1,8 @@
-class CC1300 implements CarComponent{
+public interface Engine extends CarComponent{
+
+}
+
+class CC1300 implements Engine{
 
     double cost;
 
@@ -17,7 +21,7 @@ class CC1300 implements CarComponent{
     }
 }
 
-class CC1700 implements CarComponent{
+class CC1700 implements Engine{
 
     double cost;
 
@@ -35,7 +39,7 @@ class CC1700 implements CarComponent{
     }
 }
 
-class CC1800 implements CarComponent{
+class CC1800 implements Engine{
 
     double cost;
 
@@ -53,7 +57,7 @@ class CC1800 implements CarComponent{
     }
 }
 
-class CC2100 implements CarComponent{
+class CC2100 implements Engine{
 
     double cost;
 

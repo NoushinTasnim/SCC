@@ -1,8 +1,8 @@
-abstract class Seat implements CarComponent{
+public interface Seat extends CarComponent{
 
 }
 
-class RacingCarSeat extends Seat{
+class RacingCarSeat implements Seat{
     double cost;
 
     RacingCarSeat(double cost){
@@ -38,7 +38,7 @@ class PrivateCarSeat implements CarComponent{
     }
 }
 
-class SUVCarSeat extends Seat{
+class SUVCarSeat implements Seat{
     double cost;
 
     SUVCarSeat(double cost){
@@ -55,7 +55,7 @@ class SUVCarSeat extends Seat{
     }
 }
 
-class MilitaryCarSeat extends Seat{
+class MilitaryCarSeat implements Seat{
     double cost;
 
     MilitaryCarSeat(double cost){

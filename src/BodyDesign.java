@@ -1,3 +1,3 @@
-abstract class BodyDesign implements CarComponent{
+public interface BodyDesign extends CarComponent{
     
 }

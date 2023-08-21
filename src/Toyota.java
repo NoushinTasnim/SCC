@@ -1,4 +1,4 @@
-class Toyota extends BodyDesign{
+class Toyota implements BodyDesign{
 
     double cost;
 

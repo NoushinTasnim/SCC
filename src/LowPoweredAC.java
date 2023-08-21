@@ -1,4 +1,4 @@
-class LowPoweredAC extends AC{
+class LowPoweredAC implements AC{
     private double cost;
 
     public LowPoweredAC(double cost) {

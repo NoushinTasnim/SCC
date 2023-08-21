@@ -1,3 +1,3 @@
-abstract class AC implements CarComponent{
+public interface AC extends CarComponent{
 
 }

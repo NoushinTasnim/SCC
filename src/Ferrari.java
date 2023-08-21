@@ -1,4 +1,4 @@
-class Ferrari extends BodyDesign{
+class Ferrari implements BodyDesign{
 
     double cost;
 

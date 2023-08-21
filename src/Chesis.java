@@ -1,8 +1,8 @@
-abstract class Chesis implements CarComponent{
+public interface Chesis extends CarComponent{
 
 }
 
-class Tabular extends Chesis{
+class Tabular implements Chesis{
     double cost;
 
     Tabular(double cost){
@@ -20,7 +20,7 @@ class Tabular extends Chesis{
     }
 }
 
-class Backbone extends Chesis{
+class Backbone implements Chesis{
     double cost;
 
     Backbone(double cost){
@@ -38,7 +38,7 @@ class Backbone extends Chesis{
     }
 }
 
-class LadderFrame extends Chesis{
+class LadderFrame implements Chesis{
     double cost;
 
     LadderFrame(double cost){
