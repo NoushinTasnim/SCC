@@ -1,4 +1,4 @@
-public class WhiteCar implements CarDecorator{
+public class WhiteCar implements Color{
     double cost;
 
     WhiteCar(double cost){

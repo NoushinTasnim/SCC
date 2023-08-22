@@ -20,7 +20,7 @@ class RacingCarSeat implements Seat{
     }
 }
 
-class PrivateCarSeat implements CarComponent{
+class PrivateCarSeat implements Seat{
     double cost;
 
     PrivateCarSeat(double cost){
