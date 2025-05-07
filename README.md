@@ -1,40 +1,64 @@
-# 🚗 Special Car Company (SCC) – OOP Design Project
+# 🚗 SCC: Special Car Company – Design Pattern Based OOP System
 
-This repository contains a fully object-oriented simulation of a fictional car company named **Special Car Company (SCC)**. The project is designed around modular, scalable software architecture using **design patterns**, **solid OOP principles**, and **clean class structures**.
-
----
-
-## 📚 Project Overview
-
-**SCC** is the world’s largest car manufacturer with multiple subsidiaries (e.g., Ferrari, Ford, Toyota, etc.) and serves both Asia and USA markets. This project captures the business logic, structural design, and customer-facing functionality of SCC's car production and customization pipeline.
+This repository contains an object-oriented, extensible, and pattern-rich simulation of **Special Car Company (SCC)** – a fictional global car manufacturing organization. This project is developed for the **Software Pattern Lab (CSE-3216)** course at the University of Dhaka and demonstrates deep integration of software design principles and patterns.
 
 ---
 
-## 🧩 Key Features & Concepts
+## 📖 Overview
 
-### ✅ Core Car Components
-- **Engine**: Multiple CC variations
-- **Tires**: Snow, Slick, Spare, etc.
-- **Chassis**: Backbone, Ladder Frame, etc.
-- **AC**: High/Low powered
-- **Seats**: Varying per car type (e.g., Racing, SUV)
-- **Color & Body Design**
-- **Automated AI**: Region-specific (Asia/USA)
+SCC produces various types of cars (e.g., Racing, SUV, Military), operates globally, supports customizations, and manages client interactions through services and notifications. The system is designed using core **object-oriented principles (SOLID)** and multiple **design patterns** for modularity, scalability, and real-world simulation.
 
-### ✅ Car Groups & Variants
-- Brands: *Ferrari, Ford, Toyota, BMW, Chevrolet*
-- Variants: *Racing Car, Private Car, SUV, Military Vehicle*
-- Each brand has dedicated shops and supports customization.
+---
 
-### ✅ Design Patterns Used
-- **Abstract Factory**: For generating different car variants across brands
-- **Decorator Pattern**: For handling customizable features (e.g., Rain Shield, Bumpers)
-- **Observer Pattern**: For client notification (price/features)
-- **Command Pattern**: For managing client service requests (wash, repair, delivery)
-- **Adapter Pattern**: For connecting mobile app middleware to the web-based backend
+## 🧩 Key Features
 
-### ✅ Services Handled
-- Car servicing at client's location
-- Scheduled car washing
-- Online purchase and delivery handling
-- Middleware interface for mobile app integration
+### ✅ Core Car System
+- **Engine, Tire, Chassis, AC, Color, Seat**: Implemented via **Strategy Pattern**
+- **Price Calculation**: Aggregated dynamically based on components and decorations
+- **Car Groups**: Ferrari, Ford, Toyota, BMW, Chevrolet using **Abstract Factory Pattern**
+
+### ✅ Car Variants
+- Racing, Private, SUV, Military – handled through **Factory Method**
+- Region-specific (Asia/USA) configurations and shop implementations
+
+### ✅ Customization Options
+- Add-ons: Rain Shield, Bumper, Gate Control, Open Roof
+- Implemented using **Decorator Pattern** to dynamically attach features
+
+### ✅ Notification System
+- Clients subscribe/unsubscribe to updates on car prices or features
+- Implemented using **Observer Pattern**
+
+### ✅ Central Online Services
+- Car servicing, washing, delivery system exposed through **Facade Pattern**
+- Unified interface simplifies complex backend services
+
+### ✅ Mobile Middleware
+- Middleware bridges web-based services and mobile app features
+- Also utilizes **Facade Pattern** for consistency and simplicity
+
+---
+
+## 🛠️ Technologies
+
+- Language: **Python** (object-oriented)
+- No external libraries; standard OOP principles and patterns applied
+
+---
+
+## 🧠 Design Patterns Summary
+
+| Pattern          | Purpose                                      |
+|------------------|----------------------------------------------|
+| Strategy         | Interchangeable car components               |
+| Decorator        | Optional, composable customizations          |
+| Abstract Factory | Brand-wise grouped car and shop creation     |
+| Factory Method   | Variant-wise car instantiation               |
+| Observer         | Notification subscription system             |
+| Facade           | Unified interface for services and mobile    |
+
+---
+
+## 📄 Documentation
+
+The complete design rationale, UML diagrams, and pros/cons analysis of each module and pattern are available in the [📘 PDF Design Report](./08_14_SCC.pdf).
