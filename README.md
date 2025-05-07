@@ -56,9 +56,3 @@ SCC produces various types of cars (e.g., Racing, SUV, Military), operates globa
 | Factory Method   | Variant-wise car instantiation               |
 | Observer         | Notification subscription system             |
 | Facade           | Unified interface for services and mobile    |
-
----
-
-## 📄 Documentation
-
-The complete design rationale, UML diagrams, and pros/cons analysis of each module and pattern are available in the [📘 PDF Design Report](./08_14_SCC.pdf).
