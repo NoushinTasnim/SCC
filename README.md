@@ -39,13 +39,6 @@ SCC produces various types of cars (e.g., Racing, SUV, Military), operates globa
 
 ---
 
-## 🛠️ Technologies
-
-- Language: **Python** (object-oriented)
-- No external libraries; standard OOP principles and patterns applied
-
----
-
 ## 🧠 Design Patterns Summary
 
 | Pattern          | Purpose                                      |
